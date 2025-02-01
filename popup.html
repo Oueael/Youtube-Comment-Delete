@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>YouTube Comment Deletion</title>
+  </head>
+  <body>
+    <h3>YouTube Comment Deletion</h3>
+    <p>Click the button below to delete YouTube comments.</p>
+    <button id="start-deletion">Start Deletion</button>
+    <script>
+      document.getElementById('start-deletion').addEventListener('click', () => {
+        chrome.tabs.executeScript({file: 'content.js'});
+      });
+    </script>
+  </body>
+</html>
